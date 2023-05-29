@@ -17,7 +17,7 @@ client.once(Events.ClientReady, c => {
       .catch(error => console.log(error));
 
     console.log('[REQUEST] Request made');
-  }, 1000); // Interval in milliseconds
+  }, 2000);
 });
 
 client.login(token);
