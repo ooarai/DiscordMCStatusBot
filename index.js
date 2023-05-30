@@ -9,7 +9,7 @@ client.once(Events.ClientReady, c => {
   console.log(`[DISCORD] Logged in as ${c.user.tag}`);
 
   setInterval(() => {
-    fetch('https://api.mcstatus.io/v2/status/java/YOUR_SERVER_ADRESS_HERE')
+    fetch('https://api.mcstatus.io/v2/status/java/YOUR_SERVER_ADRESS_HERE') // // Replace "java" with "bedrock" if your server is on Bedrock
       .then(response => response.json())
       .then(data => {
         const onlineStatus = data.online ? `Online [${data.players.online}/${data.players.max}]` : 'Offline';
