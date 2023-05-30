@@ -9,7 +9,7 @@ client.once(Events.ClientReady, c => {
   console.log(`[DISCORD] Logged in as ${c.user.tag}`);
 
   setInterval(() => {
-    fetch('https://api.mcstatus.io/v2/status/java/test.aternos.me') // Replace "java" with "bedrock" if your server is on Bedrock
+    fetch('https://api.mcstatus.io/v2/status/java/YOUR_SERVER_ADRESS_HERE') // Replace "java" with "bedrock" if your server is on Bedrock
       .then(response => response.json())
       .then(data => {
         const motdLowerCase = data.motd.clean.toLowerCase();
