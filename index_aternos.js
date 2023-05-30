@@ -1,6 +1,7 @@
 const { Client, Events, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config.json');
 const { ActivityType } = require('discord.js');
+const fetch = require('node-fetch');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -8,11 +9,11 @@ client.once(Events.ClientReady, c => {
   console.log(`[DISCORD] Logged in as ${c.user.tag}`);
 
   setInterval(() => {
-    fetch('https://api.mcstatus.io/v2/status/java/YOUR_SERVER_ADRESS_HERE') // Replace "java" with "bedrock" if your server is on Bedrock
+    fetch('https://api.mcstatus.io/v2/status/java/test.aternos.me') // Replace "java" with "bedrock" if your server is on Bedrock
       .then(response => response.json())
       .then(data => {
         const motdLowerCase = data.motd.clean.toLowerCase();
-        const isOffline = motdLowerCase.includes('offline');
+        const isOffline = motdLowerCase.includes('this server is offline.');
 
         if (isOffline) {
           client.user.setActivity('Offline', { type: ActivityType.Playing });
