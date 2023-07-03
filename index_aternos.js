@@ -1,5 +1,7 @@
 const { Client, Events, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config.json');
+const { ip } = require('./config.json');
+const { platform } = require('./config.json');
 const { ActivityType } = require('discord.js');
 const fetch = require('node-fetch');
 
@@ -9,7 +11,7 @@ client.once(Events.ClientReady, c => {
   console.log(`[DISCORD] Logged in as ${c.user.tag}`);
 
   setInterval(() => {
-    fetch('https://api.mcstatus.io/v2/status/java/YOUR_SERVER_ADRESS_HERE') // Replace "java" with "bedrock" if your server is on Bedrock
+    fetch(`https://api.mcstatus.io/v2/status/${platform}/${ip}`)
       .then(response => response.json())
       .then(data => {
         const motdLowerCase = data.motd.clean.toLowerCase();
