@@ -1,5 +1,5 @@
 {
     "token": "YOUR_DISCORD_BOT_TOKEN_HERE"
-    "ip": "YOUR_SERVER_IP_ADRESS",
-    "platform": "java"
+    "ip": "YOUR_SERVER_IP_ADRESS_HERE",
+    "platform": "java OR bedrock"
 }
