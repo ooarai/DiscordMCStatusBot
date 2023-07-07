@@ -11,9 +11,11 @@ index.js keeps track of when the server is actually offline, when index_aternos.
 ## Dependencies
 
 ```
-npm i discord.js
+npm i discord.js@14.11.0
 ```
-
+```
+npm i node-fetch@2.6.12
+```
 ## License
 
 This repository is distributed under the [MIT license](https://mit-license.org/). You can use it for any purpose, including commercial, without restrictions.
