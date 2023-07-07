@@ -8,6 +8,10 @@ index.js keeps track of when the server is actually offline, when index_aternos.
 
 **Don't forget to configure the bot in config.json!**
 
+![Discord_hEwMW0isBT](https://github.com/Gevionielly/mcstatusbot/assets/68006269/0d09c9fc-4847-417c-b7f2-646e06b175d1)
+![Discord_hEwMW0isBT](https://github.com/Gevionielly/mcstatusbot/assets/68006269/fbdf5530-abde-4bd3-a70c-93243d5781de)
+
+
 ## Dependencies
 
 ```
