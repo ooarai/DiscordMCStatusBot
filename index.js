@@ -25,7 +25,7 @@ client.once(Events.ClientReady, c => {
           const onlineStatus = data.online ? `Online [${data.players.online}/${data.players.max}]` : 'Offline';
           client.user.setActivity(`${onlineStatus}`, { type: ActivityType.Playing });
         } else {
-          console.log(`Invalid mode value in config.json: ${mode}`);
+          console.log(`[ERROR] Invalid "mode" value in config.json: ${mode}`);
         }
       })
       .catch(error => console.log(error));
