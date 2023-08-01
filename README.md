@@ -23,10 +23,10 @@ Track online and the number of players on your Minecraft server through a Discor
 ## Dependencies
 
 ```
-npm install discord.js
+npm install discord.js@14.11.0
 ```
 ```
-npm install node-fetch@2.6.1
+npm install node-fetch@2.6.7
 ```
 ## License
 
