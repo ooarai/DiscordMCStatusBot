@@ -11,13 +11,14 @@ Track online and the number of players on your Minecraft server through a Discor
 
 ## Configuring config.json
 
-token: `your Discord bot's token`
-
-ip: `server IP`
-
-platform: `java` or `bedrock`
-
-mode: `aternos` or `normal`
+```
+{
+    "token": "Discord bot token",
+    "ip": "server IP",
+    "platform": "bedrock" or "java",
+    "mode": "aternos" or "normal"
+}
+```
 
 ## Dependencies
 
