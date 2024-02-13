@@ -31,7 +31,7 @@ client.once(Events.ClientReady, c => {
       .catch(error => console.log(error));
 
     console.log('[REQUEST] Request made');
-  }, 10000); // Interval of request and status update of the bot in milliseconds
+  }, 10000); // Интервал между запросом и обновлением статуса бота в миллисекундах
 });
 
 client.login(token);
