@@ -1,6 +1,6 @@
 {
-    "token": "...",
-    "ip": "...",
-    "platform": "...",
-    "mode": "..."
+    "token": "ТОКЕН_ВАШЕГО_БОТА",
+    "ip": "АЙПИ_АДРЕС_СЕРВЕРА",
+    "platform": "bedrock" ИЛИ "java",
+    "mode": "aternos" ИЛИ "normal"
 }
